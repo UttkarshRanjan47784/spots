@@ -59,11 +59,11 @@ export default function Canvas() {
 
   return (
     <>
-        <div className='bg-black flex justify-center items-center fixed w-full space-x-5 p-3'>
+        <div className='bg-black flex justify-center items-center fixed w-full space-x-5 p-3 z-50'>
             <button className='px-4 py-2 border-2 border-white rounded-full' onClick={handleUndo}>UNDO</button>
             <button className='px-4 py-2 border-2 border-white rounded-full' onClick={handleRedo}>REDO</button>
         </div>
-        <div className='bg-red-400 h-dvh' onClick={handleNewSpot}>
+        <div className='h-dvh' onClick={handleNewSpot}>
             {renderSpots}
         </div>
     </>
